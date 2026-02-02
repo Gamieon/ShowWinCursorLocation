@@ -42,6 +42,9 @@ namespace ShowWinCursorLocation
             myTimer.Enabled = true;
 
             Application.Run(myForm);
+
+            myTimer.Dispose();
+            myForm.Dispose();
         }
 
         private static void OnTimedEvent(object source, ElapsedEventArgs e)
